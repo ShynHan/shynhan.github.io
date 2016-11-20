@@ -3,9 +3,9 @@
   
     
     <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>%2F2016%2F11%2F19%2Fhello-world%2F</url>
-      <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <title><![CDATA[Github+Hexo+Next 搭建静态博客]]></title>
+      <url>%2F2016%2F11%2F20%2FGithub-Hexo-Next-%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%2F</url>
+      <content type="text"><![CDATA[前言经过数天的研究，终于成功的把博客搭建起来了，摆脱第三方博客的束缚，我的地盘我做主，这感觉真好。其实搭建过程并不难，主要是自己技术薄弱，而且网络也不稳定，走了很多弯路，所以想把自己搭建的过程和需要注意的地方记录下来，方便别人，也省得自己忘记。 更新记录2016-11-20 撰写初稿 配置 Github Github 主页 Github是最著名的开源项目托管平台，本博客就是基于 Github 提供的静态页面功能搭建的，因为我的 Github 帐号申请的时间较早，基本就是拿来就用了，所以先挖个坑，详细的注册、创建静态页面、绑定 SSH 密钥等步骤以后再补。关于这部分信息网上很多，很容易搜到。 配置 HexoHexo 是一个快速、简洁且高效的博客框架。Hexo 使用 MarkDown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页 Hexohexo.io/zh-cn/docs/#什么是-Hexo？ 推荐看 Hexo中文文档，写的很详细也很全面，下面的内容基本搬自Hexo中文文档，省略了一些暂时用不到的细节，还有关于安装nvm和使用nvm安装Node.js的部分会稍有不同。 安装 Hexo安装Hexo之前需要先安装下列应用程序： Node.js Git]]></content>
     </entry>
 
     
