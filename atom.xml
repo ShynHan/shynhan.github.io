@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shynhan.github.io/"/>
-  <updated>2016-11-20T16:41:07.823Z</updated>
+  <updated>2016-11-24T15:50:28.452Z</updated>
   <id>https://shynhan.github.io/</id>
   
   <author>
@@ -20,51 +20,69 @@
     <link href="https://shynhan.github.io/2016/11/20/Github-Hexo-Next-%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     <id>https://shynhan.github.io/2016/11/20/Github-Hexo-Next-搭建静态博客/</id>
     <published>2016-11-19T17:57:37.000Z</published>
-    <updated>2016-11-20T16:41:07.823Z</updated>
+    <updated>2016-11-24T15:50:28.452Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>经过数天的研究，终于成功的把博客搭建起来了，摆脱第三方博客的束缚，<strong>我的地盘我做主</strong>，这感觉真好。<br>其实搭建过程并不难，主要是自己技术薄弱，而且网络也不稳定，走了很多弯路，所以想把自己搭建的过程和需要注意的地方记录下来，方便别人，也省得自己忘记。</p>
-<h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><p>2016-11-20 撰写初稿</p>
-<h2 id="配置-Github"><a href="#配置-Github" class="headerlink" title="配置 Github"></a>配置 Github</h2><blockquote><p>GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>先说说为什么要自己搭建博客吧</p>
+<ol>
+<li>没有广告</li>
+<li>想发什么随心，不用担心文章被删除</li>
+<li>丰富的可定制性与扩展性</li>
+<li>更个性的域名</li>
+<li>不用担心被封号，文章可随时倒出</li>
+<li>…</li>
+</ol>
+<p>欢迎大家留言补充！</p>
+<h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><p>2016-11-20 撰写初稿<br>2016-11-24 补充完善</p>
+<h2 id="配置-Github"><a href="#配置-Github" class="headerlink" title="配置 Github"></a>配置 <strong>Github</strong></h2><blockquote><p>GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
 <footer><strong>Github</strong><cite><a href="https://guides.github.com/activities/hello-world/#what" target="_blank" rel="external">guides.github.com/activities/hello-world/#what</a></cite></footer></blockquote>
-<p><code>Github</code>是最著名的开源项目托管平台，本博客就是基于 Github 提供的静态页面功能搭建的，因为我的 Github 帐号申请的时间较早，基本就是拿来就用了，所以先挖个坑，详细的注册、创建静态页面、绑定 SSH 密钥等步骤以后再补。关于这部分信息网上很多，很容易搜到。</p>
-<h2 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 Hexo</h2><blockquote><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 MarkDown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页</p>
+<p>Github 是最著名的开源项目托管平台，本博客就是基于 Github 提供的静态页面功能搭建的，因为我的 Github 帐号申请的时间较早，基本就是拿来就用了，所以先挖个坑，详细的注册、创建静态页面、绑定 SSH 密钥等步骤以后再补。关于这部分信息网上很多，很容易搜到。</p>
+<h2 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 <strong>Hexo</strong></h2><blockquote><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 MarkDown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页</p>
 <footer><strong>Hexo</strong><cite><a href="https://hexo.io/zh-cn/docs/#什么是-Hexo？" target="_blank" rel="external">hexo.io/zh-cn/docs/#什么是-Hexo？</a></cite></footer></blockquote>
-<p>推荐看 <a href="https://hexo.io/zh-cn/docs" target="_blank" rel="external">Hexo中文文档</a>，写的很详细也很全面，下面的内容基本搬自<code>Hexo中文文档</code>，省略了一些暂时用不到的细节，还有关于安装<code>nvm</code>和使用<code>nvm</code>安装<code>Node.js</code>的部分会稍有不同。</p>
-<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>安装<code>Hexo</code>之前需要先安装下列应用程序：</p>
+<p>推荐看 <a href="https://hexo.io/zh-cn/docs" target="_blank" rel="external">Hexo中文文档</a>，写的很详细也很全面，下面的内容基本搬自 Hexo 中文文档，省略了一些暂时用不到的细节，还有关于安装 nvm 和使用 nvm 安装 Node.js 的部分会稍有不同。</p>
+<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 <strong>Hexo</strong></h3><p>安装<code>Hexo</code>之前需要先安装下列应用程序：</p>
 <ul>
 <li><a href="https://nodejs.org" target="_blank" rel="external">Node.js</a></li>
 <li><a href="https://git-scm.com" target="_blank" rel="external">Git</a></li>
 </ul>
-<p>如果你已经安装好了上列程序，只需要在终端中输入下面的命令即可完成<code>Hexo</code>的安装。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
+<p>如果你已经安装好了上列程序，只需要在终端中输入下面的命令即可完成 Hexo 的安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure>
 <p>如果没有安装好所需程序请看下面</p>
 <h4 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h4><blockquote><p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. </p>
 <footer><strong>Git</strong><cite><a href="https://git-scm.com" target="_blank" rel="external">git-scm.com</a></cite></footer></blockquote>
 <ul>
 <li>Windows 系统到 <a href="https://git-scm.com/downloads" target="_blank" rel="external">Git下载页面</a> 下载对应版本的<code>Git</code>并安装。</li>
-<li>Linux 系统（LinuxMint，Ubuntu，Debian）在终端中运行下列命令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install git-core</div></pre></td></tr></table></figure>
-</li>
+<li>Linux 系统（LinuxMint，Ubuntu，Debian）在终端中运行下列命令：<br><code>udo apt-get install git-core</code></li>
 </ul>
-<h4 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h4><blockquote><p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。</p>
+<h4 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 <strong>Node.js</strong></h4><blockquote><p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。</p>
 <footer><strong>Node.js</strong><cite><a href="http://nodejs.cn" target="_blank" rel="external">nodejs.cn</a></cite></footer></blockquote>
 <ul>
 <li>Windows 系统推荐到 <a href="https://nodejs.org" target="_blank" rel="external">Node.js主页</a> 下载安装程序，我用的是<code>v6.9.1</code>版本，目前没问题，其他版本请自行测试。</li>
-<li>Linux 系统推荐使用 <a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a>（<code>Node.js</code>版本管理器） 安装<code>Node.js</code><h5 id="通过nvm安装Node-js"><a href="#通过nvm安装Node-js" class="headerlink" title="通过nvm安装Node.js"></a>通过<code>nvm</code>安装<code>Node.js</code></h5>下面以 Ubuntu 系统为例，使用 Windows 系统请到上面提供的地址下载<code>Node.js</code>安装程序。</li>
+<li>Linux 系统推荐使用 <a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a>（Node.js版本管理器） 安装 Node.js<h5 id="通过-nvm-安装-Node-js"><a href="#通过-nvm-安装-Node-js" class="headerlink" title="通过 nvm 安装 Node.js"></a>通过 <strong>nvm</strong> 安装 <strong>Node.js</strong></h5></li>
 </ul>
+<p>下面以 Ubuntu 系统为例，使用 Windows 系统请到上面提供的地址下载 Node.js 安装程序，不需要使用 nvm 安装。</p>
 <ol>
-<li>安装<code>nvm</code><br>在终端中运行下列命令（这里与<code>Hexo中文文档</code>中的不同，我用<code>Hexo中文文档</code>提供的命令安装没有成功，所以我到<code>vnm</code>的 Github 项目主页找到了作者提供的方法）：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash</div></pre></td></tr></table></figure>
+<li>安装 <strong>nvm</strong><br>在终端中运行下列命令（这里与 <strong>Hexo中文文档</strong> 中的不同，我用 Hexo 中文文档提供的命令安装没有成功，所以我到 vnm 的 Github 项目主页找到了作者提供的方法）：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash</div></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash</div></pre></td></tr></table></figure>
+<ol>
+<li><p>修改终端配置，在终端的首选项中找到「以登录 Shell 方式运行命令」选中并重启终端。</p>
+</li>
+<li><p>安装 <strong>Node.js</strong><br>在终端中运行下列命令（<code>v6.9.1</code>代表 Node.js 版本，可根据需要自行更换）：</p>
 </li>
 </ol>
-<p>或者<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash</div></pre></td></tr></table></figure></p>
-<ol>
-<li>修改终端配置，在终端的首选项中找到「以登录 Shell 方式运行命令」并选中</li>
-<li>安装<code>Node.js</code><br>在终端中运行下列命令（<code>v6.9.1</code>代表<code>Node.js</code>版本，可根据需要自行更换）：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm install v6.9.1</div></pre></td></tr></table></figure>
-</li>
-</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm install v6.9.1</div></pre></td></tr></table></figure>
+<p>安装成功后使用 <code>node -v</code> 命令查看是否安装成功。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;经过数天的研究，终于成功的把博客搭建起来了，摆脱第三方博客的束缚，&lt;strong&gt;我的地盘我做主&lt;/strong&gt;，这感觉真好。&lt;br&gt;其实
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;先说说为什么要自己搭建博客吧&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;没有广告&lt;/li&gt;
+&lt;li&gt;想发什么随心，不用担心文章被删除&lt;/li&gt;
+&lt;li&gt;丰富
     
     </summary>
     
