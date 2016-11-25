@@ -1,0 +1,45 @@
+title: 鹿台
+subtitle: 台高插汉，榭耸凌云。
+description: 这里是思想的沃土，心灵的静修之地。
+author: 玄鸟
+language: zh-Hans
+timezone: null
+url: 'http://yoursite.com'
+root: /
+permalink: ':year/:month/:day/:title/'
+permalink_defaults: null
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: ':lang'
+skip_render: null
+new_post_name: ':title.md'
+default_layout: post
+titlecase: false
+external_link: true
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: null
+default_category: uncategorized
+category_map: null
+tag_map: null
+date_format: YYYY-MM-DD
+time_format: 'HH:mm:ss'
+per_page: 10
+pagination_dir: page
+theme: next
+deploy:
+  type: git
+  repo: 'git@github.com:ShynHan/shynhan.github.io.git'
+  branch: master
+avatar: /uploads/avatar.png

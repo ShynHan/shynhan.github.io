@@ -26,17 +26,17 @@ tags:
 
 ## 配置 **Github**
 
-{% blockquote Github https://guides.github.com/activities/hello-world/#what %}
-GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-{% endblockquote %}
+> GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+>
+> **Github** - _https://guides.github.com/activities/hello-world/#what_
 
 Github 是最著名的开源项目托管平台，本博客就是基于 Github 提供的静态页面功能搭建的，因为我的 Github 帐号申请的时间较早，基本就是拿来就用了，所以先挖个坑，详细的注册、创建静态页面、绑定 SSH 密钥等步骤以后再补。关于这部分信息网上很多，很容易搜到。
 
 ## 配置 **Hexo**
 
-{% blockquote Hexo https://hexo.io/zh-cn/docs/#什么是-Hexo？ %}
-Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 MarkDown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页
-{% endblockquote %}
+> Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 MarkDown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页
+>
+> **Hexo** - _https://hexo.io/zh-cn/docs/#什么是-Hexo？_
 
 推荐看 [Hexo中文文档](https://hexo.io/zh-cn/docs)，写的很详细也很全面，下面的内容基本搬自 Hexo 中文文档，省略了一些暂时用不到的细节，还有关于安装 nvm 和使用 nvm 安装 Node.js 的部分会稍有不同。
 
@@ -57,9 +57,9 @@ npm install -g hexo-cli
 
 #### 安装 Git 
 
-{% blockquote Git https://git-scm.com %}
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. 
-{% endblockquote %}
+> Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. 
+>
+> **Git** - _https://git-scm.com_
 
 * Windows 系统到 [Git下载页面](https://git-scm.com/downloads) 下载对应版本的`Git`并安装。
 * Linux 系统（LinuxMint，Ubuntu，Debian）在终端中运行下列命令：
