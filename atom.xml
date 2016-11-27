@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shynhan.github.io/"/>
-  <updated>2016-11-24T15:50:28.452Z</updated>
+  <updated>2016-11-27T15:07:14.251Z</updated>
   <id>https://shynhan.github.io/</id>
   
   <author>
@@ -16,44 +16,120 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Github+Hexo+Next 搭建静态博客</title>
-    <link href="https://shynhan.github.io/2016/11/20/Github-Hexo-Next-%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://shynhan.github.io/2016/11/20/Github-Hexo-Next-搭建静态博客/</id>
-    <published>2016-11-19T17:57:37.000Z</published>
-    <updated>2016-11-24T15:50:28.452Z</updated>
+    <title>注册 GitHub 详细步骤（图文）</title>
+    <link href="https://shynhan.github.io/2016/11/27/%E6%B3%A8%E5%86%8C-GitHub-%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4%EF%BC%88%E5%9B%BE%E6%96%87%EF%BC%89/"/>
+    <id>https://shynhan.github.io/2016/11/27/注册-GitHub-详细步骤（图文）/</id>
+    <published>2016-11-27T14:25:05.000Z</published>
+    <updated>2016-11-27T15:07:14.251Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>先说说为什么要自己搭建博客吧</p>
-<ol>
-<li>没有广告</li>
-<li>想发什么随心，不用担心文章被删除</li>
-<li>丰富的可定制性与扩展性</li>
-<li>更个性的域名</li>
-<li>不用担心被封号，文章可随时倒出</li>
-<li>…</li>
-</ol>
-<p>欢迎大家留言补充！</p>
-<h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><p>2016-11-20 撰写初稿<br>2016-11-24 补充完善</p>
-<h2 id="配置-Github"><a href="#配置-Github" class="headerlink" title="配置 Github"></a>配置 <strong>Github</strong></h2><blockquote><p>GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
-<footer><strong>Github</strong><cite><a href="https://guides.github.com/activities/hello-world/#what" target="_blank" rel="external">guides.github.com/activities/hello-world/#what</a></cite></footer></blockquote>
-<p>Github 是最著名的开源项目托管平台，本博客就是基于 Github 提供的静态页面功能搭建的，因为我的 Github 帐号申请的时间较早，基本就是拿来就用了，所以先挖个坑，详细的注册、创建静态页面、绑定 SSH 密钥等步骤以后再补。关于这部分信息网上很多，很容易搜到。</p>
-<h2 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 <strong>Hexo</strong></h2><blockquote><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 MarkDown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页</p>
-<footer><strong>Hexo</strong><cite><a href="https://hexo.io/zh-cn/docs/#什么是-Hexo？" target="_blank" rel="external">hexo.io/zh-cn/docs/#什么是-Hexo？</a></cite></footer></blockquote>
-<p>推荐看 <a href="https://hexo.io/zh-cn/docs" target="_blank" rel="external">Hexo中文文档</a>，写的很详细也很全面，下面的内容基本搬自 Hexo 中文文档，省略了一些暂时用不到的细节，还有关于安装 nvm 和使用 nvm 安装 Node.js 的部分会稍有不同。</p>
-<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 <strong>Hexo</strong></h3><p>安装<code>Hexo</code>之前需要先安装下列应用程序：</p>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本来这里的内容是写在 <a href="https://shynhan.github.io/2016/11/20/GitHub-Hexo-Next-搭建静态博客/">GitHub+Hexo+Next 搭建静态博客</a> 里的，但是后来发现篇幅有些过长就决定另起一篇，这样可以写的更详细一些。</p>
+<p>Github 由于服务器在国外，访问速度很慢，有时还会无法链接，所以想要注册 Github 需要有一定的耐心。</p>
+<h2 id="更新时间"><a href="#更新时间" class="headerlink" title="更新时间"></a>更新时间</h2><p>2016-11-27 初次撰写</p>
+<h2 id="GitHub-简介"><a href="#GitHub-简介" class="headerlink" title="GitHub 简介"></a>GitHub 简介</h2><blockquote>
+<p>GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
+<p><strong>GitHub</strong> - <em><a href="https://guides.github.com/activities/hello-world/#what" target="_blank" rel="external">https://guides.github.com/activities/hello-world/#what</a></em></p>
+</blockquote>
+<p><a href="https://github.com" target="_blank" rel="external">Github</a> 是最著名的开源项目托管平台，本博客就是基于 Github 提供的静态页面功能搭建的，国内提供类似功能的有 <a href="https://git.oschina.net/" target="_blank" rel="external">码云</a>（开源中国提供）和 <a href="https://coding.net/" target="_blank" rel="external">Coding</a>（以前还有个 GitCafe 不过被 Coding 收购了），本博客就是同时搭建在这三个平台之上，同步更新。</p>
+<p>Github 服务器在国外，所以访问速度慢，但是胜在稳定可靠。<br>如果只是发些普通的文章推荐使用 <strong>码云</strong> 或者 <strong>Coding</strong> 因为速度真的很快。<br>或者你也可以像我一样，同时在三个平台更新。</p>
+<p>下面以 <strong>Github</strong> 为例讲详细记录注册过长，其他平台可以参考。</p>
+<h2 id="注册-Github"><a href="#注册-Github" class="headerlink" title="注册 Github"></a>注册 Github</h2><h3 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h3><p>访问 <a href="https://github.com/join?source=header-home" target="_blank" rel="external">Github注册页</a>，根据提示依次填入:</p>
+<ul>
+<li>自定义用户名，不能使用中文</li>
+<li>邮箱地址</li>
+<li>自定义密码</li>
+</ul>
+<p>填写完毕后点击 <code>Creat an account</code> 按钮提交注册信息。</p>
+<p><img src="http://p1.bqimg.com/575659/d4d31e61a911da0a.jpg" alt="Github注册1"></p>
+<h3 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h3><p>选择使用方案：</p>
+<ul>
+<li>Unlimited public repositories for free.（免费，但是只能创建开源项目）</li>
+<li>Unlimited private repositories for $7/month.（7美刀每月，可以创建私有项目）</li>
+</ul>
+<p>默认选择第一项（免费），如果经济能力允许可以选择第二项</p>
+<p>选择完成后点击下面的 <code>Continue</code> 按钮提交。</p>
+<p><img src="http://i1.piimg.com/575659/3f5d1a34f129d2ef.jpg" alt="Github注册2"></p>
+<h3 id="Step-3"><a href="#Step-3" class="headerlink" title="Step 3"></a>Step 3</h3><p>类似一个问卷，介绍你自己，可以自己酌情选择与填写，然后点击 <code>Submit</code> 提交，也可以点击 <code>skip this step</code> 直接跳过。</p>
+<p><img src="http://i1.piimg.com/575659/4a14e119fb2b791a.jpg" alt="Github注册3"></p>
+<p><strong>到此，Github 就注册完成了</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本来这里的内容是写在 &lt;a href=&quot;https://shynhan.github.io/2016/11/20/GitHub-Hexo-N
+    
+    </summary>
+    
+      <category term="教程, 原创" scheme="https://shynhan.github.io/categories/%E6%95%99%E7%A8%8B-%E5%8E%9F%E5%88%9B/"/>
+    
+    
+      <category term="Github" scheme="https://shynhan.github.io/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub+Hexo+Next 搭建静态博客</title>
+    <link href="https://shynhan.github.io/2016/11/20/GitHub-Hexo-Next-%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://shynhan.github.io/2016/11/20/GitHub-Hexo-Next-搭建静态博客/</id>
+    <published>2016-11-19T17:57:37.000Z</published>
+    <updated>2016-11-27T15:43:49.194Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul>
+<li>GitHub：相当于一个服务器，相比于国内的一些博客服务提供商要稳定安全，且靠谱的多。不会昨天还高喊「永久免费」今天就告诉你马上要停止服务了，快转移资料吧</li>
+<li>Hexo：相当于博客框架（基于 Node.js），快速、简单，扩展插件较多，支持 Markdown 格式渲染</li>
+<li>Next：博客主题，简洁、文档齐全且可定制性强，最重要的是全中文文档</li>
+</ul>
+<p>这三个组合在一起，真的是非常赞！</p>
+<h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><p>2016-11-20 撰写初稿<br>2016-11-24 补充完善<br>2016-11-25 发现写的太详细篇幅会过长，所以决定将文章拆开，分篇讲解</p>
+<h2 id="配置-GitHub"><a href="#配置-GitHub" class="headerlink" title="配置 GitHub"></a>配置 GitHub</h2><p>GitHub 需要注册才能使用，如果不会注册可以参考下面的文章，如果已注册请忽略：</p>
+<blockquote>
+<p>【注册 GitHub 详细步骤（图文）】</p>
+<p><strong>鹿台</strong> <em><a href="https://shynhan.github.io/2016/11/27/注册-GitHub-详细步骤（图文）/">https://shynhan.github.io/2016/11/27/注册-GitHub-详细步骤（图文）/</a></em></p>
+</blockquote>
+<h3 id="创建静态主页"><a href="#创建静态主页" class="headerlink" title="创建静态主页"></a>创建静态主页</h3><ul>
+<li>打开 <a href="https://github.com" target="_blank" rel="external">GtiHub 主页</a> 并登录。</li>
+<li>新建一个项目<ul>
+<li>如果你从未创建过项目点击 <code>Start a project</code> 按钮新建一个项目</li>
+<li>对于创建过项目的人来说这一步很简单，就不扣图了。 </li>
+</ul>
+</li>
+</ul>
+<p><img src="http://p1.bpimg.com/575659/27bc19d2ab5125c0.jpg" alt="Github_page1"></p>
+<ul>
+<li>上面的操作完成后跳转到一个新页面，先填写项目名称：<br><code>username.github.io</code><br>例如：<br><code>shynhan.github.io</code><br>这里的「shynhan」就是用户名，使用小写，即使你的用户名里有大写（我的用户名是「ShynHan」）字母也要转换成对应的小写字母，一定要写一致。</li>
+<li>下面的项目描述随便填写</li>
+<li>选择免费用户选择「Public」项目（默认项），付费用户可以根据自己需要选择「Private」项目</li>
+<li>勾选上「Initialize this repository with a README」，创建「README」文档，方便测试</li>
+<li>确认无误后点击<code>Create repository</code>按钮提交</li>
+</ul>
+<p><img src="http://p1.bpimg.com/575659/1e5307d93ab5dd9e.jpg" alt="Github_page2"></p>
+<p><strong>至此，创建 GitHub 静态页面部分就完成了，新的静态页面需要十分钟左右初始化</strong></p>
+<h3 id="配置-SSH-密钥"><a href="#配置-SSH-密钥" class="headerlink" title="配置 SSH 密钥"></a>配置 SSH 密钥</h3><h2 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 <strong>Hexo</strong></h2><blockquote>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 MarkDown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页</p>
+<p><strong>Hexo</strong> - <em><a href="https://hexo.io/zh-cn/docs/#什么是-Hexo？" target="_blank" rel="external">https://hexo.io/zh-cn/docs/#什么是-Hexo？</a></em></p>
+</blockquote>
+<p>关于 [Hexo][Hexo] 的配置推荐阅读 <a href="https://hexo.io/zh-cn/docs" target="_blank" rel="external">Hexo中文文档</a>，官方文档，十分全面，不过篇幅稍长，懒得看文档的可以看下面的步骤，基本是在官方文档里挑的一些重要且必要的内容，还有部分内容是我自己补充的。</p>
+<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>安装 <strong>Hexo</strong> 之前需要先安装下列应用程序：</p>
 <ul>
 <li><a href="https://nodejs.org" target="_blank" rel="external">Node.js</a></li>
 <li><a href="https://git-scm.com" target="_blank" rel="external">Git</a></li>
 </ul>
-<p>如果你已经安装好了上列程序，只需要在终端中输入下面的命令即可完成 Hexo 的安装：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<p>如果你已经安装好了上列程序，只需要在终端中输入下面的命令即可完成 Hexo 的安装：<br><code>npm install -g hexo-cli</code></p>
 <p>如果没有安装好所需程序请看下面</p>
-<h4 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h4><blockquote><p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. </p>
-<footer><strong>Git</strong><cite><a href="https://git-scm.com" target="_blank" rel="external">git-scm.com</a></cite></footer></blockquote>
+<h4 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h4><blockquote>
+<p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. </p>
+<p><strong>Git</strong> - <em><a href="https://git-scm.com" target="_blank" rel="external">https://git-scm.com</a></em></p>
+</blockquote>
 <ul>
-<li>Windows 系统到 <a href="https://git-scm.com/downloads" target="_blank" rel="external">Git下载页面</a> 下载对应版本的<code>Git</code>并安装。</li>
-<li>Linux 系统（LinuxMint，Ubuntu，Debian）在终端中运行下列命令：<br><code>udo apt-get install git-core</code></li>
+<li>Windows：到 <a href="https://git-scm.com/downloads" target="_blank" rel="external">Git下载页面</a> 下载对应版本的 Git 并安装。<br>如无特殊需求，安装过程中使用默认选项即可。</li>
+<li>Linux（LinuxMint，Ubuntu，Debian）：在终端中运行下列命令<br><code>sudo apt-get install git-core</code></li>
 </ul>
-<h4 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 <strong>Node.js</strong></h4><blockquote><p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。</p>
+<p>安装完成后需要对 <strong>Git</strong> 进行简单的设置：</p>
+<ul>
+<li>在终端中输入<code>git --version</code>检查 Git 是否正确安装（这是查看 Git 版本的命令）</li>
+<li>确认 Git 运行正常后输入<br><code>git config --global user.name &quot;自定义用户名&quot;</code><br>回车确定，如无任何反馈证明设置成功（Unix 哲学，没有现象就是好现象）</li>
+<li>设置完用户名之后设置 Git 邮箱<br><code>git config --global user.email &quot;自定义邮箱地址&quot;</code><br>这里的邮箱地址推荐填写 GitHub 的绑定邮箱，这样在你使用 Git 向 GitHub 推送消息的时候会显示出你是项目管理者</li>
+</ul>
+<h4 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h4><blockquote><p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。</p>
 <footer><strong>Node.js</strong><cite><a href="http://nodejs.cn" target="_blank" rel="external">nodejs.cn</a></cite></footer></blockquote>
 <ul>
 <li>Windows 系统推荐到 <a href="https://nodejs.org" target="_blank" rel="external">Node.js主页</a> 下载安装程序，我用的是<code>v6.9.1</code>版本，目前没问题，其他版本请自行测试。</li>
@@ -61,7 +137,7 @@
 </ul>
 <p>下面以 Ubuntu 系统为例，使用 Windows 系统请到上面提供的地址下载 Node.js 安装程序，不需要使用 nvm 安装。</p>
 <ol>
-<li>安装 <strong>nvm</strong><br>在终端中运行下列命令（这里与 <strong>Hexo中文文档</strong> 中的不同，我用 Hexo 中文文档提供的命令安装没有成功，所以我到 vnm 的 Github 项目主页找到了作者提供的方法）：</li>
+<li>安装 nvm<br>在终端中运行下列命令（这里与 <strong>Hexo中文文档</strong> 中的不同，我用 Hexo 中文文档提供的命令安装没有成功，所以我到 vnm 的 Github 项目主页找到了作者提供的方法）：</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash</div></pre></td></tr></table></figure>
 <p>或者</p>
@@ -69,7 +145,7 @@
 <ol>
 <li><p>修改终端配置，在终端的首选项中找到「以登录 Shell 方式运行命令」选中并重启终端。</p>
 </li>
-<li><p>安装 <strong>Node.js</strong><br>在终端中运行下列命令（<code>v6.9.1</code>代表 Node.js 版本，可根据需要自行更换）：</p>
+<li><p>安装 Node.js<br>在终端中运行下列命令（<code>v6.9.1</code>代表 Node.js 版本，可根据需要自行更换）：</p>
 </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm install v6.9.1</div></pre></td></tr></table></figure>
@@ -78,20 +154,15 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;先说说为什么要自己搭建博客吧&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;没有广告&lt;/li&gt;
-&lt;li&gt;想发什么随心，不用担心文章被删除&lt;/li&gt;
-&lt;li&gt;丰富
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;GitHub：相当于一个服务器，相比于国内的一些博客服务提供商要稳定安全，且靠谱的多。不会昨天还高喊「永久免费」今天就告诉你马上
     
     </summary>
     
+      <category term="教程" scheme="https://shynhan.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="Github" scheme="https://shynhan.github.io/tags/Github/"/>
     
-      <category term="Hexo" scheme="https://shynhan.github.io/tags/Hexo/"/>
-    
-      <category term="Next" scheme="https://shynhan.github.io/tags/Next/"/>
+      <category term="原创" scheme="https://shynhan.github.io/tags/%E5%8E%9F%E5%88%9B/"/>
     
   </entry>
   
