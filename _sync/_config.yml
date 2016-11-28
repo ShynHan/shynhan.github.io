@@ -69,7 +69,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: 
+  repo:
    github: "git@github.com:ShynHan/shynhan.github.io.git"
    oschian: "git@git.oschina.net:shynhan/shynhan.git"
    coding: "git@git.coding.net:shynhan/shynhan.git"
