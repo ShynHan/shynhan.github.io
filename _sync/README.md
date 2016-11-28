@@ -11,29 +11,28 @@ date: 2016-11-28 21:23:15
 
 一个简单的目录结构，「#」后面的是注释内容
 
-- /
- + about # 关于页面
-  * index.md
- + categories # 分类页面
-  * index.md
- + _posts # 博客默认的文章源文件文件夹
-  * GitHub-Hexo-Next-搭建静态博客.md
-  * 注册-GitHub-详细步骤（图文）.md
-  * ...
- + _sync # 配置和文件同步目录
-  * scaffolds # 模板文件目录
-   - draft.md
-   - page.md
-   - post.md
-  * source # 这里的文件应放在博客目录下的「source」目录里，也可以放在主题文件目录的「source」目录下
-   - uploads # 头像
-    + avatar.png
-   - 404.html # 腾讯爱心 404 页面
-   - favicon.ico # 网站 favicon 图标
-  * themes # 主题同步文件
-   - next
-    + _config.yml # Next 主题配置文件
-  * _config.yml # 博客目录下的站点配置文件
-  * README.md # 当前正在查看的「README.md」文档
- + tags # 标签页面
-  * index.md
+/
+├── about # 关于页面
+│   └── index.md
+├── categories # 分类页面
+│   └── index.md
+├── _posts # 博客默认的文章源文件文件夹
+│   ├── GitHub-Hexo-Next-搭建静态博客.md
+│   └── 注册-GitHub-详细步骤（图文）.md
+├── _sync # 配置和文件同步目录
+│   ├── _config.yml # 博客目录下的站点配置文件
+│   ├── README.md # 当前正在查看的「README.md」文档
+│   ├── scaffolds # 模板文件目录
+│   │   ├── draft.md
+│   │   ├── page.md
+│   │   └── post.md
+│   ├── source # 里面的内容需要放在主题或者博客目录下的「source」里
+│   │   ├── 404.html # 腾讯爱心 404 页面
+│   │   ├── favicon.ico # 网站 favicon 图标
+│   │   └── uploads # 头像目录
+│   │       └── avatar.png
+│   └── themes # 主题同步文件
+│       └── next
+│           └── _config.yml # Next 主题配置文件
+└── tags # 标签页面
+    └── index.md
