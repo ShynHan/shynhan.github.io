@@ -5,7 +5,7 @@ categories:
 - 教程
 - 原创教程
 tags:
-- Github
+- GitHub
 ---
 ## 前言
 
